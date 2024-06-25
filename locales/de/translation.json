@@ -1,0 +1,1313 @@
+{
+  "aiTransform": {
+    "changedColumnsText_one": "1 Spalte mit geänderten Daten",
+    "changedColumnsText_other": "{{count}} Spalten mit geänderten Daten",
+    "changedColumnsText_zero": "{{count}} Spalten mit geänderten Daten",
+    "errors": {
+      "entilementError": {
+        "content": "Wenn Sie glauben, dass dies ein Fehler ist, wenden Sie sich bitte an den Kundensupport.",
+        "title": "Entschuldigung! Sie haben keinen Zugriff auf diese Funktion."
+      },
+      "generalError": {
+        "title": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+      },
+      "generateMutationError": {
+        "title": "Die KI kann nicht erreicht werden. Bitte versuchen Sie es später noch einmal."
+      },
+      "invalidFunctionError": {
+        "content": "Wahrscheinlich haben Sie ihn gebeten, etwas Ungültiges zu tun.",
+        "title": "Es tut uns leid, der KI-Assistent kann diese Transformation nicht durchführen."
+      },
+      "keysModifiedError": {
+        "title": "Entschuldigung, der KI-Assistent kann nur die Werte bestehender Felder ändern. Er kann keine Felder entfernen oder neue Felder hinzufügen."
+      },
+      "noFunctionError": {
+        "content": "Versuchen Sie, dies anders zu formulieren. Aufforderungen, die Feldnamen enthalten, sind in der Regel erfolgreicher.",
+        "title": "Wir konnten Ihre Eingabeaufforderung nicht verstehen."
+      },
+      "noRecordsFoundError": {
+        "content": "Es wurden keine Datensätze für die angegebene Abfrage gefunden. Bitte versuchen Sie es erneut.",
+        "title": "Keine Datensätze gefunden"
+      },
+      "noresultsError": {
+        "content": "Versuchen Sie, dies anders zu formulieren. Aufforderungen, die Feldnamen enthalten, sind in der Regel erfolgreicher.",
+        "title": "Ihre Eingabeaufforderung hat keine Daten transformiert."
+      },
+      "prompttoolongError": {
+        "content": "Versuchen Sie, Ihre Eingabeaufforderung zu kürzen oder in mehrere Schritte aufzuteilen und probieren Sie es erneut.",
+        "title": "Entschuldigung! Ihre Aufforderung war ein wenig zu lang."
+      },
+      "versionError": {
+        "content": "Es konnte keine Rollback-Version erstellt werden.",
+        "title": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+      }
+    },
+    "exitConfirmation": {
+      "body": "Sind Sie sicher, dass Sie beenden möchten?",
+      "header": "Bestätigung zum Beenden",
+      "label": "Beenden"
+    },
+    "jobCompleteHeading": "KI-Transformationsauftrag abgeschlossen",
+    "jobCompleteMessage": "Die Datensätze sind umgewandelt worden",
+    "promptBar": {
+      "categoricalWarning": "Dieses Feld hat zu viele Optionen, um von AI Transform verarbeitet zu werden.",
+      "fieldTooltip": "{{key}}: {{description}}",
+      "transformButton": {
+        "tooltip": {
+          "active": "Beschreiben Sie, wie die Daten in einem Feld basierend auf einer beliebigen Logik umgewandelt werden sollen, einschließlich der Daten in einem beliebigen Feld",
+          "disabled": "Sie müssen einige Datensätze in Ihrem (gefilterten) Blatt haben, um den KI-Assistenten verwenden zu können.",
+          "locked": "Die Tabelle ist gesperrt.",
+          "noRows": "Sie müssen einige Datensätze in Ihrer (gefilterten) Tabelle haben, um den KI-Assistenten verwenden zu können.",
+          "readOnly": "Die Tabelle ist schreibgeschützt.",
+          "tooManyRows": "Die Tabelle hat zu viele Zeilen (über 1 Million)."
+        }
+      },
+      "warning": "Hinweis: Einige kategorische Felder in Ihrem Datensatz haben eine Menge konfigurierter Optionen. Die Verwendung dieser Felder, wie @{{fieldName}}, in Ihrer Eingabeaufforderung funktioniert möglicherweise nicht wie erwartet."
+    },
+    "sampleMessage": "Vorschau von {{number}} Datensätzen",
+    "scrollInfoText": "Blättern Sie zur nächsten geänderten Spalte",
+    "toggleLabel": "Nur geänderte Daten anzeigen"
+  },
+  "blocks": {
+    "embeddedDiff": {
+      "errors": {
+        "invalidDirection": "Eingebettetes Diff kann nicht erstellt werden, da die Eigenschaft „Richtung“ ungültig ist. Gültige Werte sind: „Blatt_zu_Snapshot“, „Snapshot_zu_Blatt“.",
+        "missingIds": "Eingebetteter Diff kann wegen fehlender Blatt-, Arbeitsmappen- oder Snapshot-ID nicht erstellt werden."
+      }
+    },
+    "embeddedSheet": {
+      "errors": {
+        "missingIds": "Eingebettetes Blatt kann nicht erstellt werden, da die Blatt- oder Arbeitsmappen-ID fehlt."
+      }
+    }
+  },
+  "checklist": {
+    "dropdowns": {
+      "headings": {
+        "sheet": "Blatt",
+        "workbook": "Arbeitsmappe"
+      }
+    },
+    "errors": {
+      "cannotLoadChecklist": "Laden der Daten-Prüfliste nicht möglich",
+      "cannotLoadSheet": "Blatt konnte nicht gefunden werden",
+      "noWorkbooksDescription": "Daten-Prüfliste erfordert zumindest 1 aktive Arbeitsmappe. Bitte lassen Sie die Konfigurierung durch Ihren Entwickler überprüfen. Falls das Problem weiter besteht, kontaktieren Sie bitte den Kundendienst.",
+      "noWorkbooksTitle": "Arbeitsmappe erforderlich"
+    },
+    "table": {
+      "dataTypes": {
+        "boolean": "Aussagenlogisch",
+        "date": "Datum",
+        "enum": "Aufzählung",
+        "number": "Zahl",
+        "reference": "Referenz",
+        "string": "Reihung",
+        "unknown": "Unbekannt"
+      },
+      "fieldTagComputed": "Berechnet",
+      "fieldTagRequired": "Erforderlich",
+      "fieldTagUnique": "Einmalig",
+      "headings": {
+        "dataType": "Datentyp",
+        "description": "Beschreibung",
+        "field": "Feldname"
+      }
+    },
+    "title": "Daten-Checkliste"
+  },
+  "commandMenu": {
+    "aiAssist": {
+      "query": {
+        "askingAI": {
+          "stepFour": "Beenden",
+          "stepOne": "Nachdenken",
+          "stepThree": "Tun",
+          "stepTwo": "Schreiben"
+        },
+        "description": {
+          "branded": "KI bitten, eine Query für Sie in FFQL zu schreiben",
+          "whitelabeled": "KI bitten, eine Query für Sie zu schreiben"
+        },
+        "errorBanner": {
+          "generalError": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+        },
+        "instruction": "Beschreiben Sie, wie Sie möchten, dass der KI-Assistent Ihre Daten abfragt:",
+        "review": {
+          "description": "Das habe ich mir ausgedacht. Lesen Sie die Schritt-für-Schritt-Erklärung und die Abfrage, und wenn es gut aussieht, klicken Sie unten, um es anzuwenden.",
+          "explanationTitle": "Erklärung",
+          "queryTitle": "Abfrage"
+        }
+      },
+      "transform": {
+        "askingAI": {
+          "stepFour": "Beenden",
+          "stepOne": "Nachdenken",
+          "stepThree": "Tun",
+          "stepTwo": "Schreiben"
+        }
+      }
+    },
+    "buttons": {
+      "apply": "Anwenden",
+      "cancel": "Abbrechen"
+    },
+    "commands": {
+      "filter": {
+        "apply": "Filter anwenden.",
+        "description": {
+          "branded": "ein FFQL-Statement schreiben",
+          "whitelabeled": "eine Query schreiben"
+        },
+        "hiddenColumnsWarning_one": "1 Feld wird nach diesem Query nicht länger verborgen sein: {{fields}}",
+        "hiddenColumnsWarning_other": "{{count}} Felder werden nach diesem Query nicht länger verborgen sein: {{fields}}",
+        "hiddenColumnsWarning_zero": "{{count}} Felder werden nach diesem Query nicht länger verborgen sein: {{fields}}",
+        "invalidFFQL": "Ungültiges FFQL-Statement. Erneut versuchen?",
+        "learnHow": "erfahren, wie"
+      },
+      "search": {
+        "global": {
+          "apply": "Suche anwenden.",
+          "description": "das ganze Blatt durchsuchen"
+        },
+        "inField": {
+          "apply": "Suche innerhalb eines Feldes anwenden.",
+          "applyExample": "z. B. „Vorname“ Jane Doe",
+          "description": "Suche innerhalb eines Feldes"
+        }
+      }
+    },
+    "itemMessage": "zum Anwenden {{icon}} drücken",
+    "placeholder": "Finden oder tun Sie etwas ..."
+  },
+  "document": {
+    "error": {
+      "description": "Dieses Dokument existiert offenbar nicht",
+      "title": "Dokument nicht gefunden"
+    }
+  },
+  "errors": {
+    "documentNotFound": "Dokument nicht gefunden",
+    "fileNotFound": "Datei nicht gefunden",
+    "missingParameter": "Parameter nicht angegeben",
+    "notFound": "Nicht gefunden",
+    "notFoundPageDescription": "Es existiert keine Seite unter dieser URL. Wenden Sie sich bitte an den Support, falls dies unerwartet sein sollte.",
+    "refreshButton": "Erneut versuchen",
+    "refreshPageDescription": "Aktualisieren Sie die Seite und versuchen Sie es erneut. Wenn das Problem weiterhin besteht, wenden Sie sich bitte an den Support.",
+    "sessionExpired": "Die Sitzung ist abgelaufen",
+    "sheetNotFound": "Arbeitsblatt nicht gefunden",
+    "spaceNotFound": "Bereich nicht gefunden",
+    "unauthorized": "Ihre Zugangsdaten sind ungültig.",
+    "unknownError": "Etwas ist schief gelaufen",
+    "workbookNotFound": "Arbeitsmappe nicht gefunden"
+  },
+  "files": {
+    "availableDownloadsTab": "Verfügbare Downloads",
+    "buttons": {
+      "addFile": {
+        "inProgressText": "Datei wird hochgeladen",
+        "text": "Datei hinzufügen"
+      },
+      "addFileFrom": {
+        "box": "Box",
+        "googleDrive": "Google Drive",
+        "text": "Datei hinzufügen von ..."
+      },
+      "delete": "Löschen",
+      "download": "Herunterladen",
+      "googleDrive": "Datei aus Google Drive hinzufügen"
+    },
+    "connectionsModal": {
+      "box": "Box",
+      "close": "Schließen",
+      "googleDrive": "Google Drive",
+      "heading": "Verwalten Sie Ihre Verbindungen",
+      "manage": "Verwalten",
+      "subtext": " Klicken Sie auf die Schaltflächen unten, um sich bei Ihren Konten an- oder abzumelden."
+    },
+    "contextMenu": {
+      "delete": "Löschen",
+      "download": "Herunterladen"
+    },
+    "counts": "{{start}}–{{end}} von {{total}}",
+    "deleteModal": {
+      "downloadDescription_one": "Diese heruntergeladene Datei wird aus dem Speicherplatz gelöscht.\n",
+      "downloadDescription_other": "Diese heruntergeladenen Dateien werden aus dem Speicherplatz gelöscht.\n\n",
+      "downloadDescription_zero": "Diese heruntergeladenen Dateien werden aus dem Speicherplatz gelöscht.\n",
+      "heading_one": "Datei löschen",
+      "heading_other": "Dateien löschen",
+      "heading_zero": "Dateien löschen",
+      "subheading_one": "Datei:\n",
+      "subheading_other": "Dateien:\n",
+      "subheading_zero": "Dateien:\n",
+      "uploadsDescription_one": "Alle importierten Daten werden gespeichert. Dadurch wird die Datei aus dem Speicherplatz gelöscht.",
+      "uploadsDescription_other": "Alle importierten Daten werden gespeichert. Dadurch werden die Dateien aus dem Speicherplatz gelöscht.\n",
+      "uploadsDescription_zero": "Alle importierten Daten werden gespeichert. Dadurch werden die Dateien aus dem Raum gelöscht."
+    },
+    "downloadsTable": {
+      "headings": {
+        "createdDate": "Erzeugt",
+        "name": "Name",
+        "size": "Größe",
+        "sourceSheet": "Quellblatt"
+      },
+      "processing": "Wird exportiert ..."
+    },
+    "emptyState": {
+      "downloads": {
+        "description": "Die heruntergeladenen Daten werden hier angezeigt.",
+        "heading": "Keine Downloads verfügbar"
+      },
+      "uploads": {
+        "description": "Datei ziehen und ablegen oder hochladen, um loszulegen",
+        "heading": "Dateien hinzufügen"
+      }
+    },
+    "errors": {
+      "loadingError": "Die Dateien können nicht geladen werden",
+      "uploadDisabledDescription": "Falls Sie glauben, dass das ein Fehler ist, kontaktieren Sie bitte den Kundendienst.",
+      "uploadDisabledHeading": "Dieser Speicherort unterstützt derzeit keine Datei-Uploads."
+    },
+    "title": "Dateien",
+    "uploadedFilesTab": "Hochgeladene Dateien",
+    "uploadFile": {
+      "popovers": {
+        "errorUploading": "Datei kann nicht hochgeladen werden: {{fileName}}",
+        "extracting": "Datei wird extrahiert",
+        "extractionCompleted": "Extraktion abgeschlossen.",
+        "extractionFailed": "Extraktion fehlgeschlagen. Versuchen Sie es erneut oder wenden Sie sich an den Support.",
+        "onDragPopoverConfirmation": "Datei ablegen in:",
+        "unsupportedFile": "Nicht unterstützter Dateityp. Versuchen Sie einen anderen Dateityp oder wenden Sie sich an den Support.",
+        "unsupportedFileInfo": "Wir haben keine Daten in dieser Datei gefunden. Falls erforderlich, steht diese Datei zum Download bereit.",
+        "uploadComplete": "Hochgeladen: {{fileName}}",
+        "uploadCompleteMany": "{{count}} Dateien hochgeladen",
+        "uploadError": "Fehler beim Hochladen von {{fileName}}",
+        "uploadErrorMany": "Fehler beim Hochladen von {{count}} Dateien",
+        "uploadingMany": "{{count}} Dateien werden hochgeladen",
+        "uploadInProgress": "Hochladen: {{fileName}}",
+        "uploadInProgressMany": "{{count}} Dateien werden hochgeladen",
+        "uploadsDisabled": "Dieser Speicherort unterstützt derzeit keine Datei-Uploads.",
+        "waitingForExtraction": "Auf Dateiextraktion warten"
+      }
+    },
+    "uploadsTables": {
+      "headings": {
+        "name": "Name",
+        "status": "Status",
+        "uploadedDate": "Hochgeladen"
+      },
+      "importButton": "Importieren",
+      "tooltips": {
+        "cannotImport": "Importieren in eine Arbeitsmappe ist für diese Datei zur Zeit nicht verfügbar",
+        "noExtension": "Diese Datei hat keine Erweiterung. Fügen Sie dem Dateinamen die richtige Erweiterung hinzu und laden Sie die Datei erneut hoch, um sie in eine Arbeitsmappe zu importieren"
+      }
+    }
+  },
+  "guestInvite": {
+    "getNewAccessLink": {
+      "content": "Wir haben einen sicheren Zugangslink gesendet an",
+      "finePrint": "Wenn Sie Probleme haben, die E-Mail zu finden, überprüfen Sie Ihren Spam-Ordner oder aktualisieren Sie diese Seite, um einen weiteren Zugangslink zu senden. Der Link wird 5 Minuten lang funktionieren.",
+      "heading": "Prüfen Sie Ihren Posteingang"
+    }
+  },
+  "jobs": {
+    "customActions": {
+      "modals": {
+        "confirmModal": {
+          "cancelButton": "Abbrechen",
+          "defaultConfirmButton": "Bestätigen",
+          "defaultLoadingButton": "Wird geladen",
+          "isRequired": "{{field}} ist erforderlich",
+          "mustBeNumber": "{{field}} muss eine Zahl sein"
+        },
+        "defaultJobName": "Job",
+        "defaultResourceName": "diese Ressource",
+        "foregroundJobProgressModal": {
+          "defaultJobName": "Job",
+          "defaultResourceName": "diese Ressource",
+          "percentComplete": "{{percent}}% abgeschlossen",
+          "runningOn": "wird ausgeführt auf"
+        },
+        "outcomeModals": {
+          "acknowledgementModal": {
+            "defaultContinueButton": "Weiter"
+          },
+          "defaultDownloadLabel": "Herunterladen",
+          "defaultFileName": "Datei",
+          "defaultHeading": {
+            "failed": "Auftrag fehlgeschlagen",
+            "success": "Erfolgreich!"
+          },
+          "defaultLabel": "Ressource anzeigen",
+          "defaultMessage": {
+            "failed": "{{jobName}} auf {{resourceName}} fehlgeschlagen",
+            "success": "{{jobName}} lief erfolgreich auf {{resourceName}}"
+          },
+          "defaultRetryLabel": "Wiederholen",
+          "defaultViewLabel": "  Ansicht aktualisieren",
+          "permanentOutcomeModal": {
+            "defaultContinueButton": "Weiter"
+          }
+        },
+        "startModal": {
+          "confirmButton": "Bestätigen",
+          "errorMessage": "Fehler beim Vorgang",
+          "loadingText": "Wird geladen"
+        }
+      }
+    },
+    "download": {
+      "downloadStartedHeading": "Download begonnen",
+      "downloadStartedMessage": "Der Download sollte automatisch begonnen haben.",
+      "seeAllDownloads": "Alle Downloads ansehen"
+    },
+    "errors": {
+      "timeout": "Auftrag abgebrochen."
+    },
+    "info": {
+      "copiedPopover": "Job-ID kopiert",
+      "copyIdTooltip": "Job-ID kopieren"
+    },
+    "panel": {
+      "action": {
+        "export": "Herunterladen",
+        "extract": "Importieren",
+        "mapping": "Zur Arbeitsmappe gehen"
+      },
+      "empty": "Aufträge werden hier angezeigt, wenn sie ausgeführt oder abgeschlossen werden.",
+      "errorLoadingJob": "Nicht gefunden",
+      "heading": "Aufträge",
+      "status": {
+        "default": {
+          "canceled": {
+            "prefix": "Job",
+            "suffix": "abgebrochen"
+          },
+          "complete": {
+            "prefix": "Job",
+            "suffix": "abgeschlossen"
+          },
+          "failed": {
+            "prefix": "Job",
+            "suffix": "fehlgeschlagen"
+          },
+          "inProgress": "Laufender Auftrag",
+          "waiting": "Warten:"
+        },
+        "delete": {
+          "cancelled": "Datensatzlöschung abgebrochen",
+          "complete": "Löschvorgang abgeschlossen",
+          "failed": "Löschvorgang fehlgeschlagen",
+          "inProgress": "Datensätze löschen",
+          "waiting": "Warten auf das Löschen von Datensätzen"
+        },
+        "export": {
+          "canceled": "Download abgebrochen",
+          "complete": "Download generiert",
+          "failed": "Download konnte nicht generiert werden",
+          "inProgress": "Download wird generiert",
+          "waiting": "Warten auf die Erstellung des Downloads"
+        },
+        "extract": {
+          "cancelled": "Dateiextraktion abgebrochen",
+          "complete": "Extrahierte Datei",
+          "failed": "Datei konnte nicht extrahiert werden",
+          "inProgress": "Datei extrahieren",
+          "waiting": "Warten auf das Extrahieren der Datei"
+        },
+        "mapping": {
+          "canceled": "Zuordnung zur Arbeitsmappe abgebrochen",
+          "complete": "Der Arbeitsmappe zugeordnet",
+          "failed": "Zuordnung zur Arbeitsmappe fehlgeschlagen",
+          "inProgress": "Zuordnung zur Arbeitsmappe",
+          "waiting": "Warten auf die Zuordnung zur Arbeitsmappe"
+        },
+        "mutate-records": {
+          "canceled": "AI Transform abgebrochen",
+          "complete": "AI Transform abgeschlossen",
+          "failed": "AI Transfrom fehlgeschlagen",
+          "inProgress": "Datensätze mit KI transformieren",
+          "waiting": "Warten auf die Umwandlung von Datensätzen mit KI"
+        }
+      },
+      "time": {
+        "calculating": "Verbleibende Zeit wird berechnet",
+        "completed": "Abgeschlossen in:",
+        "failed": "Gescheitert nach:",
+        "remaining": "verbleibend",
+        "started": "Begonnen am: {{time}}",
+        "units": {
+          "hour": "Std.",
+          "minute": "Min.",
+          "second": "Sek."
+        }
+      }
+    },
+    "pill": {
+      "hoverText": "Aufträge",
+      "multipleJobsRunning": "{{count}} laufende Aufträge",
+      "status": {
+        "default": {
+          "complete": "Auftrag abgeschlossen",
+          "failed": "Auftrag fehlgeschlagen",
+          "inProgress": "Auftrag läuft"
+        },
+        "delete": {
+          "complete": "Löschvorgang abgeschlossen",
+          "failed": "Löschvorgang fehlgeschlagen",
+          "inProgress": "Datensätze löschen …"
+        },
+        "extract": {
+          "complete": "Extraktion abgeschlossen",
+          "failed": "Extraktion fehlgeschlagen",
+          "inProgress": "Daten extrahieren …"
+        },
+        "mapping": {
+          "complete": "Zuordnung abgeschlossen",
+          "failed": "Zuordnung fehlgeschlagen",
+          "inProgress": "Zuordnung …"
+        }
+      }
+    }
+  },
+  "mapping": {
+    "clearFields": {
+      "modalHeader": "Zielfelder löschen",
+      "modalLabel": "Löschen",
+      "modalText": "Alle existierenden Zuordnungen für diesen Import werden gelöscht",
+      "modalTooltip": "Zielfelder löschen"
+    },
+    "dataPreview": {
+      "heading": "Datenvorschau für {{previewKey}}",
+      "noData": "Keine Vorschaudaten"
+    },
+    "dropdown": {
+      "placeholder": "Wählen Sie aus ..."
+    },
+    "headerButtons": {
+      "back": "Zurück",
+      "exit": "Beenden",
+      "next": "Weiter"
+    },
+    "mapEnums": {
+      "destinationFields": {
+        "dropdownOptions": {
+          "doNotImport": "Nicht importieren",
+          "keepAsIs": "Diesen Wert so belassen",
+          "keepAsIsDisabledTooltip": "Das Hinzufügen einer neuen Option zu dieser Liste wird nicht unterstützt. Das Importieren eines ungültigen Werts wird als Fehler angezeigt."
+        },
+        "heading": "Zielwerte"
+      },
+      "incomingFields": {
+        "heading": "Eingehende Werte",
+        "noData": "Zellen ohne Daten",
+        "noDataTooltip": "Sie können eine gültige Option auswählen, um alle leeren Zellen auszufüllen. Dieses Feld kann auch leer gelassen werden."
+      },
+      "progressPill_one": "{{mappedCount}} von {{count}} Wert zugeordnet",
+      "progressPill_other": "{{mappedCount}} von {{count}} Werten zugeordnet",
+      "progressPill_zero": "{{mappedCount}} von {{count}} Werten zugeordnet",
+      "progressPillAllMapped_one": "{{count}} Werte zugeordnet",
+      "progressPillAllMapped_other": "{{count}} Wert zugeordnet",
+      "progressPillAllMapped_zero": "{{count}} Wert zugeordnet",
+      "subheading": "Diese Felder haben Werte, die einer Liste gültiger Optionen zugeordnet werden müssen.",
+      "title": "Felder zuordnen"
+    },
+    "mapFields": {
+      "destinationFields": {
+        "addNewField": {
+          "description": "Dieses Feld in das Arbeitsblatt einfügen",
+          "label": "Als neues Feld hinzufügen"
+        },
+        "dropdownOptionLabels": {
+          "new": "Neu hinzufügen",
+          "unused": "Unbenutzt",
+          "used": "Verwendet"
+        },
+        "heading": "Zielfelder",
+        "progressPill": {
+          "missingRequiredFields": " - {{missingFieldsCount}} fehlt",
+          "text": "{{totalDestinationsMapped}} von {{totalDestinationFields}}",
+          "tooltip": {
+            "greaterThanTenMissing": "und {{missingFieldsAfterTen}} weitere …",
+            "missingRequiredFields": "Erforderliche Felder fehlen:",
+            "progress": "{{mappedDestinationFields}} der {{totalDestinationFields}} verfügbaren Felder im Zielblatt wurden zugeordnet zu"
+          }
+        }
+      },
+      "incomingFields": {
+        "heading": "Eingehende Felder",
+        "progressPill": {
+          "text": "{{totalIncomingMapped}} von {{totalIncomingFields}}",
+          "tooltip": "Sie haben {{mappedIncomingFields}} der {{totalIncomingFields}} Felder in Ihrem Datensatz dem Zielblatt zugeordnet."
+        }
+      },
+      "subheading": "Überprüfen und bestätigen Sie jede Mapping-Auswahl.",
+      "title": "Felder zuordnen"
+    },
+    "sheetSelection": {
+      "cannotLoadFile": "Datei kann nicht hochgeladen werden: {{fileName}}",
+      "columns_one": "1 Spalte\n",
+      "columns_other": "{{count}} Spalten\n",
+      "columns_zero": "{{count}} Spalten\n",
+      "errors_one": "1 Fehler\n",
+      "errors_other": "{{count}} Fehler",
+      "errors_zero": "{{count}} Fehler\n",
+      "importFromHeading": "Wählen Sie ein Blatt aus, aus dem Daten geladen werden sollen.",
+      "importToHeading": "Wählen Sie ein Blatt aus, in das diese Daten importiert werden sollen.",
+      "lastUpdated": "Zuletzt aktualisiert am: {{date}}",
+      "records_one": "1 Datensatz\n",
+      "records_other": "{{count}} Datensätze\n",
+      "records_zero": "{{count}} Datensätze",
+      "sheetHasNoData": "Keine Daten",
+      "sheets_one": "1 Blatt\n",
+      "sheets_other": "{{count}} Blätter\n",
+      "sheets_zero": "{{count}} Blätter\n",
+      "title": "Importieren nach",
+      "updatedAtDateFormat": "jjjj-MM-tt"
+    }
+  },
+  "platform": {
+    "pubnub": {
+      "errors": {
+        "refreshTokenActionLabel": "Neu laden",
+        "refreshTokenFailed": "Der Eventstream wurde getrennt – bitte laden Sie ihn neu, um sich wieder zu verbinden"
+      }
+    }
+  },
+  "sheet": {
+    "columnManagement": {
+      "clear_empty": "Leere Spalten löschen",
+      "errorColumnTooltip": "Diese Spalte wird nach dem Filtern nach diesem Wert nicht länger verborgen sein",
+      "hideAll": "Alles ausblenden",
+      "hideEmpty": "Leere Spalten ausblenden",
+      "hideEmptyFields": "Spalten ohne Daten ausblenden",
+      "noFields": "keine Felder",
+      "noMatches": "keine Treffer",
+      "placeholder_one": "Aus 1 Feld auswählen oder durchsuchen …",
+      "placeholder_other": "Aus {{count}} Feldern auswählen oder durchsuchen …",
+      "placeholder_zero": "Aus {{count}} Feldern auswählen oder durchsuchen …",
+      "toast": {
+        "action": "Nicht länger verbergen?",
+        "message_one": "1 Spalte mit Fehlern ist verborgen",
+        "message_other": "{{count}} Spalten mit Fehlern sind verborgen",
+        "message_zero": "{{count}} Spalten mit Fehlern sind verborgen"
+      },
+      "tooltip_one": "1 Spalte verborgen",
+      "tooltip_other": "{{count}} Spalten verborgen",
+      "tooltip_zero": "Spalten verwalten",
+      "unhideToast": {
+        "message_one": "1 Spalte ist wegen dieses Querys nicht länger verborgen",
+        "message_other": "{{count}} Spalten sind wegen dieses Querys nicht länger verborgen",
+        "message_zero": "{{count}} Spalten sind wegen dieses Querys nicht länger verborgen"
+      }
+    },
+    "embedded": {
+      "maxOpenReached": "Es können nicht mehr als {{maxOpenSheets}} eingebettete Tabellen gleichzeitig geöffnet werden. Schließen Sie eine eingebettete Tabelle, um diese zu öffnen.",
+      "untitled": "Unbenannte Tabelle"
+    },
+    "emptyView": {
+      "defaultError": {
+        "description": "Dieses Blatt scheint leer zu sein.",
+        "heading": "Noch nichts zu sehen!"
+      },
+      "heading": "Fangen wir an",
+      "manualEntry": "Daten manuell eingeben",
+      "noColumns": {
+        "description": "Alle Spalten wurden verborgen.",
+        "heading": "Hier gibt es nichts zu sehen!"
+      },
+      "noSheetError": {
+        "description": "Dieses Blatt scheint nicht zu existieren.",
+        "heading": "Blatt nicht gefunden"
+      },
+      "readOnly": {
+        "description": "Blätter, die keine neuen Zeilen und/oder Bearbeitungen zulassen, erhalten in der Regel dynamisch aufgefüllte Daten. Zu diesem Zeitpunkt können Sie keine Maßnahmen ergreifen.",
+        "heading": "Warten auf Daten"
+      },
+      "sheetLocked": {
+        "description": "Wenn Sie glauben, dass dies ein Fehler ist, wenden Sie sich bitte an den Support.",
+        "heading": "Hinzufügen von Datensätzen ist derzeit deaktiviert"
+      },
+      "uploadFile": "Datei ziehen und ablegen oder hochladen, um loszulegen"
+    },
+    "errors": {
+      "loading": "Arbeitsmappe kann nicht abgerufen werden.",
+      "noSheets": {
+        "description": "Eine Arbeitsmappe muss mindestens ein Blatt enthalten. Es wurde keine gefunden.",
+        "title": "Arbeitsmappe enthält keine Blätter"
+      },
+      "notFound": "Arbeitsmappe nicht gefunden"
+    },
+    "info": {
+      "browser": "Browser",
+      "copiedPopover": "In die Zwischenablage kopiert",
+      "copyButton": "Klicken Sie zum Kopieren!",
+      "date": "Datum",
+      "environment": "Umgebung",
+      "inFrame": "Im iFrame",
+      "referrer": "Referrer",
+      "release": "Aktuelle Ausgabe",
+      "sheet": "Folie",
+      "space": "Platz",
+      "workbook": "Arbeitsmappe"
+    },
+    "popovers": {
+      "copyCell_one": "{{count}} Zelle kopiert",
+      "copyCell_other": "{{count}} Zellen kopiert",
+      "copyCell_zero": "{{count}} Zellen kopiert",
+      "copyRecord_one": "{{count}} Aufnahme kopiert",
+      "copyRecord_other": "{{count}} Aufnahmen kopiert",
+      "copyRecord_zero": "{{count}} Aufnahmen kopiert",
+      "errors": {
+        "cellUpdateFailed": "Etwas ist schief gelaufen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut. Sollte dies weiterhin der Fall sein, wenden Sie sich bitte an den Support.",
+        "invalidFFQL": "Bitte prüfen Sie Ihre Anfrage",
+        "invalidFFQLSearch": "Ungültiges FFQL-Statement",
+        "learnMore": "Mehr erfahren",
+        "recordsLoadFailed": "Datensätze konnten nicht geladen werden"
+      }
+    },
+    "table": {
+      "cells": {
+        "enum": {
+          "loading": "Lade Optionen …",
+          "loadingError": "Optionen konnten nicht geladen werden",
+          "noMatchesFound": "Keine Übereinstimmungen gefunden",
+          "placeholder": "Hier eingeben …",
+          "seeMore": "Suchen, um weitere Optionen zu sehen"
+        },
+        "messages": {
+          "autogen": "✨ Automatisch generiert",
+          "compositeUnique": "🧑‍🍳 Das Kompositum {{name}} ist nicht einzigartig",
+          "invalidOption": "Unzulässige Option",
+          "invalidValue": "Der Wert ist keine zulässige Option",
+          "reference": "Der Wert existiert in der Referenztabelle nicht",
+          "req": "{{field}} ist erforderlich",
+          "transformed": "🪄️ Transformiert aus {{originalValue}}",
+          "unique": "Der Wert ist nicht einmalig"
+        }
+      },
+      "contextMenu": {
+        "filterByValue": {
+          "label": "Nach Wert filtern",
+          "moreOptions": "Die ersten {{pageSize}}-Optionen werden angezeigt. Suchen Sie, um mehr zu sehen.",
+          "noData": "keine Daten",
+          "placeholder": "Werte suchen oder auswählen ..."
+        },
+        "findAndReplace": {
+          "findAndReplaceValues": "Suchen und ersetzen",
+          "modal": {
+            "cancelButton": "Abbrechen",
+            "descriptionExactOnly": "Sie können per Stapelverarbeitung einen beliebigen Text in dieser Spalte durch einen gültigen Wert ersetzen – wir zeigen nur genaue Treffer an",
+            "descriptionPartialAndExact": "Sie können per Stapelverarbeitung einen beliebigen Text in dieser Spalte ersetzen – wir unterstützen bei diesen Daten partielle und genaue Treffer",
+            "errors": {
+              "findError": "Beim Auffinden der Werte ist ein Fehler aufgetreten",
+              "generalError": "Etwas ist schiefgelaufen, bitte noch einmal versuchen",
+              "replaceError": "Beim Ersetzen der Werte ist ein Fehler aufgetreten"
+            },
+            "exactMatchesOnly": "Nur genaue Treffer anzeigen",
+            "finding": "Alle Stellen suchen",
+            "heading": "In {{columnName}} suchen und ersetzen",
+            "isFiltered": "Dieser Datensatz wurde gefiltert. Das Suchen und Ersetzen bezieht sich nur auf gefilterte Aufzeichnungen.",
+            "replaceButton": "Alles ersetzen",
+            "replaceEmpty": {
+              "description": {
+                "addValues": "Hiermit werden alle leeren Zellen in {{columnName}} ausgefüllt",
+                "addValuesToAll": "Es gibt leere Zellen in {{columnName}} – Sie können einen Wert wählen, der in alle eingefügt wird",
+                "addValuesToCount_one": "Es gibt {{formattedCount}} leere Zelle in {{columnName}} – Sie können einen Wert wählen, der dort eingefügt wird",
+                "addValuesToCount_other": "Es gibt {{formattedCount}} leere Zellen in {{columnName}} – Sie können einen Wert wählen, der in alle eingefügt wird",
+                "addValuesToCount_zero": "Es gibt {{formattedCount}} leere Zellen in {{columnName}} – Sie können einen Wert wählen, der in alle eingefügt wird",
+                "noEmptyValues": "Wir haben in diesem Feld keine leeren Zellen gefunden!"
+              },
+              "heading": {
+                "addValues": "Geben Sie einen Wert für die leeren Zellen in {{columnName}} ein",
+                "addValuesToAll": "Geben Sie einen Wert für alle leeren Zellen in {{columnName}} ein",
+                "addValuesToCount_one": "Geben Sie einen Wert für die {{formattedCount}} leere Zelle in {{columnName}} ein",
+                "addValuesToCount_other": "Geben Sie einen Wert für die {{formattedCount}} leeren Zellen in {{columnName}} ein",
+                "addValuesToCount_zero": "Geben Sie einen Wert für die {{formattedCount}} leeren Zellen in {{columnName}} ein",
+                "noEmptyValues": "Keine leeren Werte gefunden"
+              }
+            },
+            "replaceEnum": {
+              "moreOptions": "Es werden die ersten 100 Optionen angezeigt. Führen Sie eine Suche durch, um mehr zu sehen.",
+              "noMatchesFound": "Keine Übereinstimmungen gefunden",
+              "replaceWith": "Ersetzen durch …"
+            },
+            "replaceValue": {
+              "leavingBlank": "Wenn dieses Feld leer bleibt, werden die gewählten Werte gelöscht",
+              "noMatchesFound": "Keine Werte gefunden",
+              "replaceWith": "Ersetzen durch …"
+            },
+            "replacing": "Ersetzen der Werte",
+            "runOnAllRecords": "Auf alle Aufzeichnungen anwenden",
+            "searchForEmpty": "Wenn dieses Feld leer bleibt, suchen wir nach leeren Werten",
+            "searchForText": "Nach Text suchen …",
+            "searchResultsCount_one": "{{count}} Treffer",
+            "searchResultsCount_other": "{{count}} Treffer",
+            "searchResultsCount_zero": "{{count}} Treffer"
+          },
+          "replaceEmptyValues": "Leere Werte ersetzen"
+        },
+        "pin": {
+          "apply": "Spalte anheften",
+          "remove": "Nicht mehr anheften",
+          "tooltip": {
+            "maxPinned": "Sie können bis zu drei Spalten anheften – heben Sie die Anheftung einer der bereits angehefteten Spalten auf, um diese Spalte anzuheften",
+            "pin": "Diese Spalte links von der Tabelle anheften",
+            "unpin": "Klicken, um diese Spalte nicht mehr anzuheften"
+          }
+        },
+        "searchInField": {
+          "modal": {
+            "cancelButton": "Abbrechen",
+            "placeholder": "Suchen …",
+            "searchButton": "Suchen",
+            "searchWithin": "Suche innerhalb von"
+          },
+          "searchInThisField": "In diesem Feld suchen"
+        },
+        "sort": {
+          "ascending": {
+            "apply": "Von A bis Z sortieren",
+            "remove": "Sortierung von A bis Z aufheben"
+          },
+          "descending": {
+            "apply": "Von Z bis A sortieren",
+            "remove": "Sortierung von Z bis A aufheben"
+          },
+          "tooltip": {
+            "notSorted": "Zum Sortieren von A bis Z klicken",
+            "sortedAsc": "Sortiert von A bis Z",
+            "sortedDes": "Sortiert von Z bis A"
+          }
+        }
+      },
+      "errors": {
+        "description": "Die Tabelle hat Probleme, diese Daten anzuzeigen. Bitte sehen Sie in der Konsole nach, ob ein Fehler vorliegt.",
+        "title": "Etwas ist schief gelaufen"
+      },
+      "header": {
+        "tooltip": {
+          "key": "Schlüssel: {{key}}",
+          "label": "Label: {{label}}"
+        }
+      },
+      "indexRow": {
+        "tooltip": {
+          "createRow": "Zum Anlegen dieser Zeile Daten hinzufügen",
+          "noData": "Es gibt keine auswählbaren Zeilen. Es können nur Zeilen ausgewählt werden, die Daten enthalten.",
+          "rowNumber": "Zeile {{number}}"
+        }
+      },
+      "maximumMessage": {
+        "plural": "...und {{hiddenRows}} weitere Zeilen. Tabellenansichten unterstützen aufgrund von Browserbeschränkungen nur bis zu 500.000 Datensätze auf einmal. Such-, Sortier-, Filter- und Massenaktionen funktionieren weiterhin auf allen ausgeblendeten Zeilen.",
+        "singular": "...und 1 weitere Zeile. Tabellenansichten unterstützen aufgrund von Browserbeschränkungen nur bis zu 500.000 Datensätze auf einmal. Such-, Sortier-, Filter- und Massenaktionen funktionieren weiterhin auf allen ausgeblendeten Zeilen."
+      },
+      "modals": {
+        "copyAlert": {
+          "cancelButton": "Abbrechen",
+          "description": "Wir haben festgestellt, dass Sie versuchen, mehr als 100 Datensätze auszuwählen. Wir beschränken das Kopieren auf 100 Datensätze, um die Integrität Ihrer Daten zu wahren.",
+          "download": "Möchten Sie dieses Blatt als CSV-Datei herunterladen?",
+          "downloadButton": "Herunterladen",
+          "heading": "Möchten Sie diese Datei herunterladen?"
+        },
+        "deleteAlert": {
+          "description": "Das Löschen von mehr als 100 vorhandenen Datensätzen wird zur Zeit nicht unterstützt. Wir haben es eingeschränkt, um eine bessere Erfahrung zu bieten, wenn wir Ihre Daten <1>intelligent modifizieren</1>.",
+          "dismissButton": "Ablehnen",
+          "heading": "Sie haben unser Löschlimit erreicht!",
+          "tooltip": "Leere Datensätze, Duplikate etc. entfernen"
+        },
+        "pasteAlert": {
+          "description": "Das Einfügen von mehr als 100 vorhandenen Datensätzen wird zur Zeit nicht unterstützt. Wir haben es eingeschränkt, um eine bessere Erfahrung zu bieten, wenn wir Ihre Daten <1>intelligent modifizieren</1>.",
+          "dismissButton": "Ablehnen",
+          "heading": "Sie haben unser Limit für das Einfügen erreicht!",
+          "tooltip": "Leere Datensätze, Duplikate etc. entfernen"
+        }
+      }
+    },
+    "toolbar": {
+      "actionsDropdown": {
+        "buttonText": "Aktionen",
+        "placeholder": "Suchen oder auswählen …"
+      },
+      "aiAssist": {
+        "buttonText": "KI-Assistent",
+        "query": "Abfrage",
+        "transform": "Transformieren"
+      },
+      "buttons": {
+        "delete": {
+          "modal": {
+            "cancelButton": "Abbrechen",
+            "confirmButton": "Aufnahmen löschen",
+            "description": {
+              "infix": "ausgewählten",
+              "infixType": {
+                "invalid": "ungültigen",
+                "valid": "gültigen"
+              },
+              "prefix": "Wollen Sie die",
+              "suffix_one": "Aufnahme löschen?",
+              "suffix_other": "Aufnahmen löschen?",
+              "suffix_zero": "Aufnahmen löschen?"
+            },
+            "errorMessage": "Die Aufnahmen können nicht gelöscht werden. Bitte versuchen Sie es noch einmal oder ändern Sie Ihre Auswahl.",
+            "heading_one": "Aufnahme löschen",
+            "heading_other": "Aufnahmen löschen",
+            "heading_zero": "Aufnahmen löschen",
+            "inProgress": "Die Aufnahmen werden gelöscht ..."
+          },
+          "popover": {
+            "successMessage_one": "{{count}} Aufnahme gelöscht",
+            "successMessage_other": "{{count}} Aufnahmen gelöscht",
+            "successMessage_zero": "{{count}} Aufnahmen gelöscht",
+            "successMessageNoCount": "Aufnahmen gelöscht"
+          },
+          "tooltip": {
+            "active": "Ausgewählte Einträge löschen",
+            "disabled": {
+              "deleteDisabled": "Das Löschen von Einträgen wurde für dieses Schema deaktiviert.",
+              "noRecordsSelected": "Zum Löschen mindestens einen Eintrag auswählen"
+            }
+          }
+        },
+        "download": {
+          "modal": {
+            "cancelButton": "Abbrechen",
+            "confirmButton": "Aufnahmen herunterladen",
+            "description": {
+              "infix": "ausgewählten",
+              "infixType": {
+                "invalid": "ungültigen",
+                "valid": "gültigen"
+              },
+              "prefix": "Wollen Sie die",
+              "suffix_one": "Aufnahme herunterladen?",
+              "suffix_other": "Aufnahmen herunterladen?",
+              "suffix_zero": "Aufnahmen herunterladen?"
+            },
+            "errorMessage": "Die Aufnahmen können nicht heruntergeladen werden. Bitte versuchen Sie es erneut oder ändern Sie Ihre Auswahl.",
+            "heading_one": "Aufnahme herunterladen",
+            "heading_other": "Aufnahmen herunterladen",
+            "heading_zero": "Aufnahmen herunterladen",
+            "inProgress": "Die Aufnahmen werden heruntergeladen ..."
+          },
+          "tooltip": {
+            "active": {
+              "invalidFilterApplied": "Alle ungültigen Einträge herunterladen",
+              "noRecordsSelected": "Dieses Schema herunterladen",
+              "recordsSelected": "Ausgewählte Einträge herunterladen",
+              "validFilterApplied": "Alle gültigen Einträge herunterladen"
+            },
+            "disabled": "Es sind keine Einträge zum Herunterladen verfügbar"
+          }
+        }
+      },
+      "customActionsDropdown": {
+        "disabledTooltip": {
+          "hasData": "Diese Aktion ist verfügbar, sobald in dieser Tabelle mindestens ein Eintrag vorhanden ist.",
+          "requireAllValid": "Für diese Aktion müssen alle ausgewählten Zeilen gültig sein",
+          "requireSelection": "Für diese Aktion bitte einen oder mehrere Einträge auswählen"
+        }
+      },
+      "dropdown": {
+        "delete": "Löschen",
+        "download": "Herunterladen"
+      },
+      "filterByError": {
+        "buttonText": "Nach Fehler filtern",
+        "dropdownPlaceholder": "Suchen oder auswählen …"
+      },
+      "filters": {
+        "all": "Alles",
+        "invalid": "Ungültig",
+        "tooltip": {
+          "countsError": "Fehler beim Laden der Zählungen",
+          "countsErrorRetry": "Zum Wiederholen klicken",
+          "filter": {
+            "invalid": "ungültig",
+            "total": "insgesamt",
+            "valid": "gültig"
+          },
+          "filtered": "Dieser Datensatz wurde gefiltert und zeigt {{filteredCount}} der {{countString}} {{filter}}-Einträge an.",
+          "filteredByError": "Dieser Datensatz wurde über den Fehlerfilter gefiltert und zeigt {{filteredCount}} der {{countString}} {{filter}}-Datensätze an.",
+          "filteredByFFQL": {
+            "branded": "Dieser Datensatz wurde über die Flatfile-Abfragesprache gefiltert, um {{filteredCount}} von den {{countString}} {{filter}} Datensätzen anzuzeigen.",
+            "whitelabeled": "Dieser Datensatz wurde gefiltert, um {{filteredCount}} von den {{countString}} {{filter}} Datensätzen anzuzeigen."
+          },
+          "filteredBySearch": "Dieser Datensatz wurde über die Suche gefiltert und zeigt {{filteredCount}} der {{countString}} {{filter}}-Einträge an.",
+          "filteredBySearchAndError": "Dieser Datensatz wurde über die Suche und den Fehlerfilter gefiltert und zeigt {{filteredCount}} der {{countString}} {{filter}}-Einträge an.",
+          "inactiveCount": "{{countString}} {{filter}}-Einträge, {{filteredCount}} gefiltert"
+        },
+        "valid": "Gültig"
+      },
+      "moreActions": {
+        "buttonText": "Weitere Aktionen",
+        "placeholder": "Suchen oder auswählen …"
+      },
+      "savedViews": {
+        "buttonText": "Ansichten",
+        "groups": {
+          "allViews": "ALLE ANSICHTEN",
+          "myViews": "MEINE ANSICHTEN"
+        },
+        "modalHeader": "Gespeicherte Ansichten",
+        "modalSubheader": "Wählen Sie eine gespeicherte Ansicht aus, um sie auf dieses Blatt anzuwenden.",
+        "searchPlaceholder": "Suchen oder auswählen ...",
+        "tooltip": "Betrachtung anwenden und Link kopieren",
+        "viewAppliedPopover": "Ihre Ansicht wurde angewendet und in die Zwischenablage kopiert!"
+      },
+      "saveView": {
+        "buttons": {
+          "cancel": "Abbrechen",
+          "copy": {
+            "label": "Zum Teilen kopieren",
+            "successLabel": "In die Zwischenablage kopiert!",
+            "warningTooltip": "Nur Personen mit Zugriff auf diesen Raum können diesen Link öffnen."
+          },
+          "save": {
+            "label": "Ansicht speichern",
+            "labelActive": "Die Ansicht wird gespeichert"
+          }
+        },
+        "error": {
+          "saveText": "Die Ansicht konnte nicht gespeichert werden – bitte versuchen Sie es noch einmal."
+        },
+        "headings": {
+          "saveHeader": "Ansicht speichern",
+          "saveSubheader": "Wählen Sie einen Namen aus, der den Zweck dieser Ansicht wiedergibt. Das hilft den Nutzern, ihre Verwendung leicht zu identifizieren.",
+          "shareHeader": "Teilen"
+        },
+        "nameViewInput": {
+          "helperText": "Denken Sie daran, dass diese Ansicht für jeden sichtbar ist, der auf dieses Blatt zugreifen kann.",
+          "label": "Name",
+          "placeholder": "Ansicht von {{timestamp}}"
+        },
+        "summary": {
+          "filter": "Aufzeichnungen, die",
+          "filterFieldpt1": "wenn",
+          "filterFieldpt2": "beinhaltet einen Fehler",
+          "invalid": "Ungültig",
+          "q": "wo",
+          "searchValue": "jedes Feld, das Folgendes enthält",
+          "title": "Zusammenfassung",
+          "valid": "Gültig"
+        }
+      },
+      "searchBar": {
+        "expandTooltip": "Suche und KI-Unterstützung öffnen",
+        "placeholder": "Suchen …",
+        "tooltip": "Zum Suchen die Entertaste drücken"
+      },
+      "tooltips": {
+        "lockedUntilEditingCompletes": "Die Werkzeugleiste steht zur Verfügung, wenn das Blatt nicht mehr bearbeitet wird",
+        "lockedUntilHookCompletes": "Die Symbolleiste ist erst wieder verfügbar, wenn alle Hooks ausgeführt wurden.",
+        "lockedUntilJobCompletes": "Die Symbolleiste wird nach Abschluss des aktuellen Auftrags verfügbar sein"
+      }
+    },
+    "workbookActions": {
+      "disabledTooltip": {
+        "hasData": "Diese Aktion ist verfügbar, sobald in dieser Arbeitsmappe mindestens ein Eintrag vorhanden ist.",
+        "hasPendingValidation": "Die Prüfung Ihrer Arbeitsmappe ist gerade im Gange ...",
+        "lockedUntilEditingCompletes": "Die Aktion steht zur Verfügung, wenn das Blatt nicht mehr bearbeitet wird",
+        "lockedUntilHookCompletes": "Diese Aktion ist verfügbar, nachdem alle Hooks ausgeführt wurden",
+        "lockedUntilJobCompletes": "Diese Aktion ist verfügbar, wenn der aktuelle Auftrag abgeschlossen ist.",
+        "requireAllValid": "Für diese Aktion müssen alle Zeilen in allen Blättern gültig sein"
+      }
+    }
+  },
+  "sidebar": {
+    "addConnection": "Verbindung hinzufügen",
+    "checklist": "Daten-Checkliste",
+    "connections": {
+      "tooltips": {
+        "connectionError": "Es gibt ein Problem beim Überprüfen der Metadaten der Verbindungen dieser Arbeitsmappe",
+        "connectionFresh": "Verbunden mit {{source}} über {{service}}",
+        "connectionStale": "Zuletzt synchronisiert mit {{source}} vor mehr als 24 Stunden"
+      }
+    },
+    "emptyWorkbook": "Leeres Arbeitsbuch",
+    "files": "Dateien",
+    "readOnlyIconTooltip": "Dieses Arbeitsblatt ist schreibgeschützt",
+    "spaceSwitcher": {
+      "placeholder": "Suchen oder wählen Sie einen Platz ..."
+    },
+    "toggle": {
+      "hide": "Seitenleiste verstecken",
+      "show": "Seitenleiste anzeigen"
+    }
+  },
+  "snapshot": {
+    "accept": {
+      "cancelButton": "Abbrechen",
+      "cancelError": "Die Änderungen konnten aufgrund eines unerwarteten Fehlers nicht rückgängig gemacht werden.",
+      "cancelSuccess": "Die Änderungen an Ihrem Blatt wurden erfolgreich rückgängig gemacht.",
+      "empty": {
+        "createdSince": "Dieser Snapshot enthält keine entfernten Datensätze.",
+        "deletedSince": "Dieser Schnappschuss enthält keine hinzugefügten Datensätze.",
+        "title": "Nichts zu sehen!",
+        "updatedSince": "Dieser Snapshot enthält keine geänderten Datensätze."
+      },
+      "errorMessage": "Die Snapshot-Änderungen konnten aufgrund eines unerwarteten Fehlers nicht übernommen werden.",
+      "filters": {
+        "createdSince": "Entfernt",
+        "deletedSince": "Hinzugefügt",
+        "updatedSince": "Geändert"
+      },
+      "header": {
+        "title": "Vorgenommene Änderungen in",
+        "titleWithMeta": "In <1>{{sheet}}</1> von <3>{{action}}</3> vorgenommene Änderungen"
+      },
+      "message": "Durch das Akzeptieren von Änderungen werden alle neuen Werte in Ihr Blatt {{name}} eingefügt.",
+      "submitButton": "Änderungen akzeptieren",
+      "submitError": "Die Snapshot-Änderungen konnten aufgrund eines unerwarteten Fehlers nicht übernommen werden.",
+      "submitSuccess": "Die Änderungen an Ihrem Blatt wurden erfolgreich angewendet.",
+      "successMessage": "Die Änderungen wurden auf Ihr Blatt angewendet.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} Zellen im Feld {{name}}",
+            "last": " und {{cells}} Zellen im Feld {{name}}",
+            "middle": ", {{cells}} Zellen im Feld {{name}}"
+          },
+          "singular": {
+            "first": "1 Zelle im Feld {{name}}",
+            "last": " und 1 Zelle im Feld {{name}}",
+            "middle": ", 1 Zelle im Feld {{name}}"
+          },
+          "start": " Die Daten wurden geändert in "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Daten wurden in {{records}} Datensätzen in {{fields}} Feldern geändert.",
+            "noFields": "Daten wurden in {{records}} Datensätzen geändert.",
+            "oneField": "Daten wurden in {{records}} Datensätzen in 1 Feld geändert."
+          },
+          "singular": {
+            "multipleFields": "Daten wurden in 1 Datensatz in {{fields}} Feldern geändert.",
+            "noFields": "Daten wurden in 1 Datensatz geändert.",
+            "oneField": "Daten wurden in 1 Datensatz in 1 Feld geändert."
+          }
+        }
+      },
+      "title": "Änderungen vorgenommen in"
+    },
+    "cells": {
+      "messages": {
+        "accept": "Wenn Sie die Änderungen akzeptieren, werden alle neuen Werte in Ihren Datensatz übernommen.",
+        "current": "Aktueller Wert: {{value}}",
+        "empty": "keine Daten",
+        "none": "Ihr Datensatz wird mit den angezeigten Werten geändert.",
+        "restore": "Ihr Datensatz wird mit der Version in diesem Snapshot wiederhergestellt.",
+        "snapshot": "Neuer Wert: {{value}}"
+      }
+    },
+    "none": {
+      "empty": {
+        "createdSince": "Es werden keine Datensätze entfernt.",
+        "deletedSince": "Es werden keine Datensätze hinzugefügt.",
+        "title": "Nichts zu sehen!",
+        "updatedSince": "Es werden keine Datensätze geändert."
+      },
+      "errorMessage": "Die Änderungen konnten aufgrund eines unerwarteten Fehlers nicht in der Vorschau angezeigt werden.",
+      "filters": {
+        "createdSince": "Entfernen",
+        "deletedSince": "Hinzufügen",
+        "updatedSince": "Ändern"
+      },
+      "header": {
+        "title": "Änderungen vorgenommen in",
+        "titleWithMeta": "Überprüfen Sie die Änderungen an <1>{{sheet}}</1>"
+      },
+      "message": "Die folgende Tabelle zeigt die Änderungen an Ihrem Blatt {{name}}.",
+      "submitError": "Die Daten konnten aufgrund eines unerwarteten Fehlers nicht transformiert werden.",
+      "submitSuccess": "Die Änderungen an Ihrem Blatt wurden erfolgreich angewendet.",
+      "successMessage": "Die Änderungen wurden auf Ihr Blatt angewendet.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} Zellen im Feld {{name}}",
+            "last": " und {{cells}} Zellen in Feld {{name}}",
+            "middle": ", {{cells}} Zellen in Feld {{name}}"
+          },
+          "singular": {
+            "first": "1 Zelle in Feld {{name}}",
+            "last": " und 1 Zelle in Feld {{name}}",
+            "middle": ", 1 Zelle in Feld {{name}}"
+          },
+          "start": " Daten werden geändert in "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Daten ändern sich in {{records}} Datensätzen über {{fields}} Felder.",
+            "noFields": "Daten ändern sich in {{records}} Datensätzen.",
+            "oneField": "Daten ändern sich in {{records}} Datensätzen über 1 Feld."
+          },
+          "singular": {
+            "multipleFields": "Daten ändern sich in 1 Datensatz über {{fields}} Felder.",
+            "noFields": "Daten ändern sich in 1 Datensatz.",
+            "oneField": "Daten ändern sich in 1 Datensatz in 1 Feld."
+          }
+        }
+      },
+      "title": "Vorschau der Änderungen in"
+    },
+    "preview": {
+      "cancelButton": "Abbrechen",
+      "empty": {
+        "createdSince": "Diese Vorschau hat keine Einträge, die entfernt werden.",
+        "deletedSince": "Diese Vorschau hat keine Einträge, die hinzugefügt werden.",
+        "title": "Nichts zu sehen!",
+        "updatedSince": "Diese Vorschau hat keine Einträge, die modifiziert werden."
+      },
+      "errorMessage": "Aufgrund eines unerwarteten Fehlers konnten die Änderungen nicht in der Vorschau angezeigt werden.",
+      "filters": {
+        "createdSince": "Entfernen",
+        "deletedSince": "Hinzufügen",
+        "updatedSince": "Modifizieren"
+      },
+      "header": {
+        "title": "Änderungen vorgenommen in",
+        "titleWithMeta": "Änderungen, die in <1>{{sheet}}</1> vorgenommen wurden, durch <3>{{aiAction}}</3>-Abfrage in der Vorschau anzeigen"
+      },
+      "message": "Dein Blatt {{name}} wird in der Version dieser Momentaufnahme wiederhergestellt werden.",
+      "submitButton": "Daten umwandeln",
+      "submitError": "Aufgrund eines unerwarteten Fehlers konnten die Daten nicht umgewandelt werden.",
+      "submitSuccess": "Die Änderungen an deinem Blatt wurden erfolgreich angewendet.",
+      "successMessage": "Die Änderungen wurden auf dein Blatt angewendet.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} Zellen in Feld {{name}}",
+            "last": " und {{cells}} Zellen in Feld {{name}}",
+            "middle": ", {{cells}} Zellen in Feld {{name}}"
+          },
+          "singular": {
+            "first": "1 Zelle in Feld {{name}}",
+            "last": " und 1 Zelle in Feld {{name}}",
+            "middle": ", 1 Zelle in Feld {{name}}"
+          },
+          "start": " Daten werden modifiziert in "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Daten werden sich in {{records}} Einträgen über {{fields}} Felder hinweg ändern.",
+            "noFields": "Daten werden sich in {{records}} Einträgen ändern.",
+            "oneField": "Daten werden sich in {{records}} Einträgen über ein Feld hinweg ändern."
+          },
+          "singular": {
+            "multipleFields": "Daten werden sich in einem Eintrag über {{fields}} Felder hinweg ändern.",
+            "noFields": "Daten werden sich in einem Eintrag ändern.",
+            "oneField": "Daten werden sich in einem Eintrag über ein Feld hinweg ändern."
+          }
+        }
+      },
+      "title": "In der Vorschau die Änderungen anzeigen, die vorgenommen wurden in"
+    },
+    "restore": {
+      "cancelButton": "Abbrechen",
+      "empty": {
+        "createdSince": "Dieser Snapshot enthält keine Datensätze, die entfernt werden müssen.",
+        "deletedSince": "Dieser Snapshot enthält keine Datensätze, die hinzugefügt werden müssen.",
+        "title": "Nichts zu sehen!",
+        "updatedSince": "Dieser Snapshot enthält keine Datensätze, die geändert werden müssen."
+      },
+      "errorMessage": "Der Schnappschuss konnte aufgrund eines unerwarteten Fehlers nicht wiederhergestellt werden.",
+      "filters": {
+        "createdSince": "Entfernen",
+        "deletedSince": "Hinzufügen",
+        "updatedSince": "Ändern"
+      },
+      "header": {
+        "title": "Anzuwendende Änderungen in"
+      },
+      "message": "Ihr Arbeitsblatt {{name}} wird in der Version dieses Schnappschusses wiederhergestellt.",
+      "submitButton": "Wiederherstellen",
+      "submitError": "Der Snapshot konnte aufgrund eines unerwarteten Fehlers nicht wiederhergestellt werden.",
+      "submitSuccess": "Ihr Blatt wurde in einer früheren Version wiederhergestellt.",
+      "successMessage": "Ihr Arbeitsblatt wurde in einer früheren Version wiederhergestellt.",
+      "summary": {
+        "fields": {
+          "plural": {
+            "first": "{{cells}} Zellen im Feld {{name}}",
+            "last": " und {{cells}} Zellen im Feld {{name}}",
+            "middle": ", {{cells}} Zellen im Feld {{name}}"
+          },
+          "singular": {
+            "first": "1 Zelle im Feld {{name}}",
+            "last": " und 1 Zelle im Feld {{name}}",
+            "middle": ", 1 Zelle im Feld {{name}}"
+          },
+          "start": " Daten werden geändert in "
+        },
+        "total": {
+          "plural": {
+            "multipleFields": "Die Daten ändern sich in {{records}} Datensätzen in {{fields}} Feldern.",
+            "noFields": "Die Daten ändern sich in {{records}} Datensätzen.",
+            "oneField": "Die Daten ändern sich in {{records}} Datensätzen in 1 Feld."
+          },
+          "singular": {
+            "multipleFields": "Die Daten ändern sich in 1 Datensatz in {{fields}} Feldern.",
+            "noFields": "Die Daten ändern sich in 1 Datensatz.",
+            "oneField": "Die Daten ändern sich in 1 Datensatz in 1 Feld."
+          }
+        }
+      },
+      "title": "Die Änderungen sollen angewendet werden auf"
+    },
+    "tooltips": {
+      "sheet": "{{sheet}} in {{workbook}}"
+    }
+  },
+  "spaceLoadingMessage": "Raum wird vorbereitet",
+  "utils": {
+    "buttons": {
+      "clearAll": "Alles löschen",
+      "clearAllLabel": "Alles löschen",
+      "selectAll": "Alles auswählen",
+      "selectAllLabel": "Alles auswählen"
+    },
+    "modals": {
+      "sizeWarning": {
+        "body": "Bitte verwenden Sie ein Gerät mit einem größeren Bildschirm, um alle Funktionen nutzen zu können. Wir können nicht garantieren, dass alle Funktionen bei dieser Bildschirmgröße wie erwartet funktionieren.",
+        "button": "Trotzdem fortfahren",
+        "title": "Bildschirm zu klein"
+      }
+    },
+    "poweredByFlatfile": "Unterstützt von Flatfile"
+  },
+  "versionHistory": {
+    "modals": {
+      "default": {
+        "description": "Ein unerwarteter Fehler ist aufgetreten. Es wurde keine passende Aktion durchgeführt"
+      },
+      "delete": {
+        "confirm": {
+          "closeButton": "Schließen",
+          "description": "Sind Sie sicher, dass Sie die ausgewählte Version löschen möchten?",
+          "heading": "Version löschen",
+          "proceedButton": "Löschen"
+        },
+        "error": {
+          "closeButton": "Schließen",
+          "description": "Die ausgewählte Version konnte aufgrund eines unerwarteten Fehlers nicht gelöscht werden. Falls das Problem weiterhin besteht, wenden Sie sich an den Support.",
+          "heading": "Version kann nicht gelöscht werden",
+          "retryButton": "Erneut versuchen"
+        },
+        "success": {
+          "closeButton": "Schließen",
+          "description": "Die ausgewählte Version wurde gelöscht.",
+          "heading": "Version gelöscht"
+        }
+      }
+    },
+    "panel": {
+      "empty": "Generierte Versionen erscheinen hier. Versionen werden automatisch generiert, oft wenn eine Massenumwandlung von Daten stattfindet.",
+      "generatedSnapshot": "Schnappschuss, der vor der Anwendung von AI Transform für die Eingabeaufforderung erstellt wurde: ",
+      "heading": "Versionsverlauf",
+      "thisMonth": "Diesen Monat",
+      "versionRestored": "Version, die vor der Wiederherstellung einer früheren Version erstellt wurde"
+    },
+    "pill": {
+      "hoverText": "Versionsverlauf"
+    }
+  }
+}
