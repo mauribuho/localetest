@@ -257,7 +257,7 @@
         "heading": "No downloads available"
       },
       "uploads": {
-        "description": "Drag and drop or upload a file to get started",
+        "description": "TEST CHANGING DRAG AND DROP",
         "heading": "Add files"
       }
     },
@@ -626,7 +626,7 @@
         "description": "If you think this is an error, please reach out to support.",
         "heading": "Adding records is currently disabled"
       },
-      "uploadFile": "Drag and drop or upload a file to get started"
+      "uploadFile": "TEST CHANGING DRAG AND DROP"
     },
     "errors": {
       "loading": "Workbook could not be retrieved.",
